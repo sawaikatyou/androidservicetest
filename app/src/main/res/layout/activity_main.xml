@@ -6,13 +6,59 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/label_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:textSize="32dp"/>
+
+        <Button
+            android:id="@+id/button_syncapicall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SyncCallApi"
+            android:onClick="onClickButton"/>
+
+        <Button
+            android:id="@+id/button_startservice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="StartService"
+            android:onClick="onClickButton"/>
+
+        <Button
+            android:id="@+id/button_stopservice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="StopService"
+            android:onClick="onClickButton"/>
+
+        <Button
+            android:id="@+id/button_bindservice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BindService"
+            android:onClick="onClickButton"/>
+
+        <Button
+            android:id="@+id/button_executeservice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ExecuteService"
+            android:onClick="onClickButton"/>
+
+        <Button
+            android:id="@+id/button_unbindservice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UnbindService"
+            android:onClick="onClickButton"/>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
